@@ -1,8 +1,8 @@
 ﻿//                                  ┌∩┐(◣_◢)┌∩┐
 //																				\\
-// Alexandria.cs (02/03/2017)													\\
+// Particula.cs (02/03/2017)													\\
 // Autor: Antonio Mateo (Moon Pincho) 									        \\
-// Descripcion:		Manager de todas las unidades								\\
+// Descripcion:		Control general de la particula								\\
 // Fecha Mod:		02/03/2017													\\
 // Ultima Mod:		Version Inicial												\\
 //******************************************************************************\\
@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace MoonPincho
 {
-	public class Alexandria : MonoBehaviour 
+	public class Particula : MonoBehaviour 
 	{
 
 	}
