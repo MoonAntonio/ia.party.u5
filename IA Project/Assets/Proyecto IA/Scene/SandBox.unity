@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -118,6 +118,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c4c1ab810c50be48812fde674eb6d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particulas: []
+  unitPrefab: {fileID: 1047656616739302, guid: e6bc5f72daf0a6a4dbf399b15662d48b, type: 2}
+  maxParticulas: 25
+  rango: {x: 25, y: 25, z: 5}
+  isObjetivo: 1
+  isObediente: 1
+  isVacilon: 0
+  distanciaMinima: 50
+  maxFuerza: 0.5
+  maxVelocidad: 3
 --- !u!4 &352516009
 Transform:
   m_ObjectHideFlags: 0
@@ -125,11 +135,61 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 352516007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1174162274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1174162276}
+  - component: {fileID: 1174162275}
+  m_Layer: 0
+  m_Name: Alexandria 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1174162275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174162274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4c1ab810c50be48812fde674eb6d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particulas: []
+  unitPrefab: {fileID: 1927634093823704, guid: 03a9095f545e0744fb6176a064109bd6, type: 2}
+  maxParticulas: 25
+  rango: {x: 25, y: 25, z: 5}
+  isObjetivo: 1
+  isObediente: 1
+  isVacilon: 0
+  distanciaMinima: 50
+  maxFuerza: 0.5
+  maxVelocidad: 3
+--- !u!4 &1174162276
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1174162274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.21, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766446233
 GameObject:
@@ -191,7 +251,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
